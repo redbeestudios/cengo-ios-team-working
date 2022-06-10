@@ -88,3 +88,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+.DS_store
+MarketplaceDummy/MarketplaceDummy.xcodeproj/project.pbxproj
+MarketplaceDummy/.DS_Store
