@@ -19,6 +19,7 @@
 		555DEC4228526C3100FECF33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		555DEC4428526C3200FECF33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		555DEC4728526C3200FECF33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		559D67272859228700F9A23F /* Auth */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Auth; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		555DEC3F28526C3100FECF33 /* MarketplaceDummy */ = {
 			isa = PBXGroup;
 			children = (
+				559D67272859228700F9A23F /* Auth */,
 				555DEC4028526C3100FECF33 /* MarketplaceDummyApp.swift */,
 				555DEC4228526C3100FECF33 /* ContentView.swift */,
 				555DEC4428526C3200FECF33 /* Assets.xcassets */,
