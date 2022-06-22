@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Auth
 
 @main
 struct MarketplaceDummyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
