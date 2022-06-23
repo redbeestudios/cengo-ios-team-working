@@ -8,11 +8,12 @@
 import SwiftUI
 
 public struct LoginView: View {
-
-    public init(){}
-
-    @State var email = ""
-    @State var password = ""
+    
+    @StateObject var vm: LoginViewModel = LoginViewModel()
+    
+    public init() {
+        
+    }
 
     public var body: some View {
         VStack(alignment: .leading) {
@@ -22,7 +23,7 @@ public struct LoginView: View {
                 Image(systemName: "mail.fill")
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Email")
-                    TextField("example@test.com", text: $email)
+                    TextField("example@test.com", text: $vm.email)
                         .padding(.top, 10)
                 }
             }.padding(.top, 20)
@@ -30,7 +31,7 @@ public struct LoginView: View {
                 Image(systemName: "lock.fill")
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Password")
-                    TextField("*****", text: $password)
+                    TextField("*****", text: $vm.password)
                         .padding(.top, 10)
                 }
             }.padding(.top, 20)
@@ -39,7 +40,7 @@ public struct LoginView: View {
             } label: {
                 VStack {
                     Button(action: {
-                        print("Login")
+                        vm.login(email: vm.email, password: vm.password)
                     })
                     {
                     HStack {
@@ -60,6 +61,7 @@ public struct LoginView: View {
 
             }
             Spacer()
+            Text(vm.result)
         }
     }
 }
@@ -67,8 +69,8 @@ public struct LoginView: View {
 struct CustomizedStyle: PrimitiveButtonStyle {
     typealias Body = Button
     func makeBody(configuration: Configuration) -> some View {
-        print(configuration.label)
-        configuration.trigger()
+        //print(configuration.label)
+        //configuration.trigger()
 
         return Button(configuration)
             .background(Color.purple)
