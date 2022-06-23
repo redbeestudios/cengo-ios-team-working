@@ -7,15 +7,16 @@
 
 import Foundation
 
-class LoginUseCase: ILoginUseCase {
+public class LoginUseCase: ILoginUseCase {
     
-    var loginRepository: LoginRepository
+    var loginRepository: ILoginRepository
     
-    init(loginRepository: LoginRepository){
+    init(loginRepository: ILoginRepository){
         self.loginRepository = loginRepository
     }
     
     func login(username: String, password: String) -> String {
-        loginRepository.login(username: username, password: password)
+        print("login flow: step 2 call func login from LoginUseCase")
+        return loginRepository.login(username: username, password: password)
     }
 }

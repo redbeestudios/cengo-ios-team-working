@@ -7,16 +7,17 @@
 
 import Foundation
 
-class LoginRepository: ILoginRepository {
+public class LoginRepository: ILoginRepository {
 
-    var networkDataSource: NetworkDataSource
+    var dataSource: IDataSource
     
-    init(networkDataSource: NetworkDataSource){
-        self.networkDataSource = networkDataSource
+    init(dataSource: IDataSource){
+        self.dataSource = dataSource
     }
     
     func login(username: String, password: String) -> String {
-        return networkDataSource.sendCredentials(username: username, password: password)
+        print("login flow: step 3 call func login from Repository")
+        return dataSource.sendCredentials(username: username, password: password)
     }
     
 }

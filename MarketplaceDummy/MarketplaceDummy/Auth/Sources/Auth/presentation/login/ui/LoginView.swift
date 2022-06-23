@@ -9,11 +9,9 @@ import SwiftUI
 
 public struct LoginView: View {
     
-    @StateObject var vm: LoginViewModel = LoginViewModel()
+    @StateObject var vm = LoginViewModel()
     
-    public init() {
-        
-    }
+    public init() {}
 
     public var body: some View {
         VStack(alignment: .leading) {
