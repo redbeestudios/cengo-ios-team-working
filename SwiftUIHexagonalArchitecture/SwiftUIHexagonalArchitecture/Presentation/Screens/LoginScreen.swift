@@ -61,20 +61,6 @@ struct LoginScreen: View {
 
                 Spacer()
 
-                //                                if let response = loginService.response {
-                //                                    if response.token.isEmpty {
-                //                                        Text(response.error)
-                //                                            .opacity(loginService.isLoading ? 0 : 1)
-                //                                    } else {
-                //                                        router.toHome(isActive: $loginService.canGoHome)
-                //                                    }
-                //
-                //                                } else if let error = loginService.error {
-                //                                    Text(error.localizedDescription)
-                //                                        .opacity(loginService.isLoading ? 0 : 1)
-                //                                }
-
-
                 HStack {
                     Spacer()
                     VStack {

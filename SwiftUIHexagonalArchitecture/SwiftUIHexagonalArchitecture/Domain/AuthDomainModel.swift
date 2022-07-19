@@ -1,6 +1,6 @@
 import Foundation
 
-struct LoginDomainModel {
+struct AuthDomainModel {
     let user: User
     let error: String
 }

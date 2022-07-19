@@ -1,10 +1,3 @@
-//
-//  Home.swift
-//  SwiftUIHexagonalArchitecture
-//
-//  Created by fgsoruco on 18/07/2022.
-//
-
 import SwiftUI
 
 struct HomeScreen: View {

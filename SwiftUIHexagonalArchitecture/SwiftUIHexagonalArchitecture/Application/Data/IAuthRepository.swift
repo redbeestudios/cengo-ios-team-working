@@ -1,5 +1,5 @@
 import Foundation
 
 protocol IAuthRepository {
-    func login(username: String, password: String) async -> Result<LoginDomainModel, Error>
+    func login(username: String, password: String) async -> Result<AuthDomainModel, Error>
 }

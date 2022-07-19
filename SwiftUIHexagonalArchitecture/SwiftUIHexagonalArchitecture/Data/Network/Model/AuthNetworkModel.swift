@@ -1,14 +1,14 @@
 import Foundation
 
-struct LoginNetworkModel: Decodable {
+struct AuthNetworkModel: Decodable {
     let token: String?
     let user: UserNetworkModel?
     let statusCode: Int?
     let message: String?
     let error: String?
 
-    func toDomain() -> LoginDomainModel {
-        LoginDomainModel(
+    func toDomain() -> AuthDomainModel {
+        AuthDomainModel(
             user: User(
                 id: token ?? "",
                 firstName: user?.firstName ?? "",

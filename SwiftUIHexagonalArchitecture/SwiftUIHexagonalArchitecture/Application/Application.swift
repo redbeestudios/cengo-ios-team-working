@@ -12,7 +12,7 @@ import Swinject
         }
         loginContainer.register(IAuthRepository.self) { r in
             AuthNetworkRepository(networkConfiguration: r.resolve(NetworkConfiguration.self)!)
-//             LoginMockRepository()
+//             AuthMockRepository()
         }
         loginContainer.register(LoginService.self) { r in
             LoginService(authRepository: r.resolve(IAuthRepository.self)!)

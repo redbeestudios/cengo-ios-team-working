@@ -16,12 +16,11 @@
 		55BDD4AC2880884E0004E8A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4AB2880884E0004E8A0 /* User.swift */; };
 		55BDD4B3288089D00004E8A0 /* IAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4B2288089D00004E8A0 /* IAuthRepository.swift */; };
 		55BDD4B828808A9D0004E8A0 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4B728808A9D0004E8A0 /* LoginService.swift */; };
-		55BDD4BA28808B100004E8A0 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4B928808B100004E8A0 /* ApplicationError.swift */; };
 		55BDD4C028808B650004E8A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 55BDD4BF28808B650004E8A0 /* Alamofire */; };
 		55BDD4C328808B7A0004E8A0 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 55BDD4C228808B7A0004E8A0 /* Swinject */; };
 		55BDD4C728808BFF0004E8A0 /* AuthMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4C628808BFF0004E8A0 /* AuthMockRepository.swift */; };
 		55BDD4CA28808C5F0004E8A0 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4C928808C5F0004E8A0 /* NetworkConfiguration.swift */; };
-		55BDD4CC28808CAD0004E8A0 /* LoginNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4CB28808CAD0004E8A0 /* LoginNetworkModel.swift */; };
+		55BDD4CC28808CAD0004E8A0 /* AuthNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4CB28808CAD0004E8A0 /* AuthNetworkModel.swift */; };
 		55BDD4CE28808CCB0004E8A0 /* UserNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4CD28808CCB0004E8A0 /* UserNetworkModel.swift */; };
 		55BDD4D028808CE90004E8A0 /* ImageNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4CF28808CE90004E8A0 /* ImageNetworkModel.swift */; };
 		55BDD4D428808D8A0004E8A0 /* AuthNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4D328808D8A0004E8A0 /* AuthNetworkRepository.swift */; };
@@ -29,7 +28,7 @@
 		55BDD4DC288093CD0004E8A0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4DB288093CD0004E8A0 /* CustomTextField.swift */; };
 		55BDD4DE2880940C0004E8A0 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4DD2880940C0004E8A0 /* CustomButtonView.swift */; };
 		55BDD4E0288095A90004E8A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4DF288095A90004E8A0 /* LoginScreen.swift */; };
-		55BDD4E22880A3060004E8A0 /* LoginDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4E12880A3060004E8A0 /* LoginDomainModel.swift */; };
+		55BDD4E22880A3060004E8A0 /* AuthDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDD4E12880A3060004E8A0 /* AuthDomainModel.swift */; };
 		55CAADDD2885ABC800F0E563 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAADDC2885ABC800F0E563 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,10 +43,9 @@
 		55BDD4AB2880884E0004E8A0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		55BDD4B2288089D00004E8A0 /* IAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthRepository.swift; sourceTree = "<group>"; };
 		55BDD4B728808A9D0004E8A0 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
-		55BDD4B928808B100004E8A0 /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
 		55BDD4C628808BFF0004E8A0 /* AuthMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMockRepository.swift; sourceTree = "<group>"; };
 		55BDD4C928808C5F0004E8A0 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
-		55BDD4CB28808CAD0004E8A0 /* LoginNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkModel.swift; sourceTree = "<group>"; };
+		55BDD4CB28808CAD0004E8A0 /* AuthNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkModel.swift; sourceTree = "<group>"; };
 		55BDD4CD28808CCB0004E8A0 /* UserNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworkModel.swift; sourceTree = "<group>"; };
 		55BDD4CF28808CE90004E8A0 /* ImageNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkModel.swift; sourceTree = "<group>"; };
 		55BDD4D328808D8A0004E8A0 /* AuthNetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkRepository.swift; sourceTree = "<group>"; };
@@ -55,7 +53,7 @@
 		55BDD4DB288093CD0004E8A0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		55BDD4DD2880940C0004E8A0 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		55BDD4DF288095A90004E8A0 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
-		55BDD4E12880A3060004E8A0 /* LoginDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDomainModel.swift; sourceTree = "<group>"; };
+		55BDD4E12880A3060004E8A0 /* AuthDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDomainModel.swift; sourceTree = "<group>"; };
 		55CAADDC2885ABC800F0E563 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +131,7 @@
 			children = (
 				55BDD4A92880882A0004E8A0 /* NetworkImage.swift */,
 				55BDD4AB2880884E0004E8A0 /* User.swift */,
-				55BDD4E12880A3060004E8A0 /* LoginDomainModel.swift */,
+				55BDD4E12880A3060004E8A0 /* AuthDomainModel.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -152,7 +150,6 @@
 			children = (
 				55BDD4AF288089460004E8A0 /* Data */,
 				55BDD4B4288089F60004E8A0 /* Service */,
-				55BDD4B928808B100004E8A0 /* ApplicationError.swift */,
 				55BDD4D528808EB90004E8A0 /* Application.swift */,
 			);
 			path = Application;
@@ -195,7 +192,7 @@
 		55BDD4C828808C1F0004E8A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				55BDD4CB28808CAD0004E8A0 /* LoginNetworkModel.swift */,
+				55BDD4CB28808CAD0004E8A0 /* AuthNetworkModel.swift */,
 				55BDD4CD28808CCB0004E8A0 /* UserNetworkModel.swift */,
 				55BDD4CF28808CE90004E8A0 /* ImageNetworkModel.swift */,
 			);
@@ -300,11 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				55BDD4D628808EB90004E8A0 /* Application.swift in Sources */,
-				55BDD4E22880A3060004E8A0 /* LoginDomainModel.swift in Sources */,
+				55BDD4E22880A3060004E8A0 /* AuthDomainModel.swift in Sources */,
 				55CAADDD2885ABC800F0E563 /* HomeScreen.swift in Sources */,
 				55BDD4AC2880884E0004E8A0 /* User.swift in Sources */,
 				55BDD4DC288093CD0004E8A0 /* CustomTextField.swift in Sources */,
-				55BDD4CC28808CAD0004E8A0 /* LoginNetworkModel.swift in Sources */,
+				55BDD4CC28808CAD0004E8A0 /* AuthNetworkModel.swift in Sources */,
 				55BDD4B3288089D00004E8A0 /* IAuthRepository.swift in Sources */,
 				55BDD4AA2880882A0004E8A0 /* NetworkImage.swift in Sources */,
 				55BDD4D028808CE90004E8A0 /* ImageNetworkModel.swift in Sources */,
@@ -314,7 +311,6 @@
 				55246A3D2881D88F00BDD29C /* LoginRoute.swift in Sources */,
 				55BDD4B828808A9D0004E8A0 /* LoginService.swift in Sources */,
 				55246A412881DC3100BDD29C /* SingUpScreen.swift in Sources */,
-				55BDD4BA28808B100004E8A0 /* ApplicationError.swift in Sources */,
 				55BDD4DE2880940C0004E8A0 /* CustomButtonView.swift in Sources */,
 				55BDD4CA28808C5F0004E8A0 /* NetworkConfiguration.swift in Sources */,
 				55BDD4CE28808CCB0004E8A0 /* UserNetworkModel.swift in Sources */,

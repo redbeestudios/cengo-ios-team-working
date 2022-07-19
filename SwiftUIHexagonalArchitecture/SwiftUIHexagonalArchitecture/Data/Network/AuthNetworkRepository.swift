@@ -11,7 +11,7 @@ class AuthNetworkRepository : IAuthRepository {
 
     var baseUrl: String { get { return "\(configuration.baseUrl)/authentication/login" } }
 
-    func login(username: String, password: String) async -> Result<LoginDomainModel, Error> {
+    func login(username: String, password: String) async -> Result<AuthDomainModel, Error> {
 
         let params: Parameters = [
             "email": username,
@@ -26,7 +26,7 @@ class AuthNetworkRepository : IAuthRepository {
                 encoding: JSONEncoding.default,
                 headers: nil
             )
-            .serializingDecodable(LoginNetworkModel.self)
+            .serializingDecodable(AuthNetworkModel.self)
             .result
             .map { resp in resp.toDomain() }
             .mapError { error in error as Error }
