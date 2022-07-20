@@ -47,14 +47,18 @@ struct LoginScreen: View {
 
                 HStack(spacing: 10) {
                     Spacer()
-                    Button {
-                        Task(priority: .userInitiated) {
-                            await loginService.start()
-                        }
-                    } label: {
-                        CustomButtonView()
-                        router.toHome(isActive: $loginService.isSuccessLogin)
-                    }
+                    Button(
+                        action: {
+                            if(!loginService.credentialsAreEmpty()) {
+                                Task(priority: .userInitiated) {
+                                    await loginService.start()
+                                }
+                            }
+                        },
+                        label:  {
+                            CustomButtonView(isDisabled: loginService.credentialsAreEmpty())
+                            router.toHome(isActive: $loginService.isSuccessLogin) }
+                    ).disabled(loginService.credentialsAreEmpty())
                 }
                 .padding(.top, 23)
                 .padding(.horizontal, 25)
