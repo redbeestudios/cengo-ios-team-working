@@ -44,4 +44,9 @@ import Foundation
 
         isLoading = false
     }
+
+    func credentialsAreEmpty() -> Bool {
+        username.isEmpty || password.isEmpty
+    }
+    
 }
